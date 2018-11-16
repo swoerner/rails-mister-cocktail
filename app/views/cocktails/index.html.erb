@@ -1,0 +1,28 @@
+<div class="banner">
+  <div class="banner-content">
+    <h1>These are my cocktail recommendations </h1>
+    <h2>Create your own </h2>
+  </div>
+</div>
+
+<h1>Take a look at that:</h1>
+
+
+  <div class="container">
+    <div class="row">
+      <% @cocktails.each do |cocktail| %>
+        <div class="col-xs-12 col-sm-4">
+          <%= render "card", cocktail: cocktail %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+
+<div class="CTA">
+  <p><%= link_to "Add a new cocktail", new_cocktail_path, class: "btn btn-primary"%></p>
+</div>
+
+<div class="test">
+  <%= cl_image_tag("pee7nfjwh4fqfnqpahmk",
+      width: 400, height: 300, crop: :fill) %>
+</div>

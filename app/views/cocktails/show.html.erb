@@ -1,0 +1,25 @@
+
+<h1><%= @cocktail.name %></h1>
+
+<div class="col-md-3 ml-md-auto">
+  <div class="add-form">
+<h2>Ingredients</h2>
+
+
+<!-- Vodka (10cl) -->
+<ul>
+<% @cocktail.doses.each do |dose| %>
+  <li>
+    <%= dose.ingredient.name %> ( <%= dose.description %> )
+    <%= link_to "🗑", dose_path(dose), method: :delete %>
+  </li>
+<% end %>
+</ul>
+
+
+    <h3>Add an ingredient</h3>
+    <%= render 'doses/form', cocktail: @cocktail, dose: @dose %>
+<%= cl_image_tag @cocktail.photo, height: 300, width: 400, crop: :fill %>
+    <%= link_to "Go back", cocktails_path %>
+  </div>
+</div>

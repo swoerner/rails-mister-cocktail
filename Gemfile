@@ -13,6 +13,11 @@ gem 'rails', '~> 5.2.1'
 # Use postgresql as the database for Active Record
 gem 'pg', '>= 0.18', '< 2.0'
 # Use Puma as the app server
+
+gem 'dotenv-rails', groups: [:development, :test]
+gem 'cloudinary'
+gem 'carrierwave', '~> 1.2'
+
 gem 'puma', '~> 3.11'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'

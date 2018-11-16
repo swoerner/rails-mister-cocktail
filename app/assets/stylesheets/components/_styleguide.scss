@@ -1,0 +1,56 @@
+
+// .wrapper {
+//   background-color: grey;
+//   padding: 50px auto;
+// }
+
+.restaurant-card {
+  padding: 10px;
+  border: 1px solid black;
+}
+
+.details {
+  padding: 10px;
+  border: 1px solid black;
+}
+
+.form {
+ padding: 10px;
+ border: 1px solid black;
+}
+.btn {
+  margin: 25px;
+}
+
+
+body {
+  font-family: "Maven Pro";
+}
+
+h1 {
+  font-size: 42px;
+  margin: 20px;
+}
+
+h2 {
+  font-size: 32px;
+}
+h3 {
+  font-size: 26px;
+}
+
+.add {
+  background-color: blue;
+  margin: 50px;
+}
+
+.add-form {
+  padding: 20px 20px
+}
+
+.CTA {
+  background-color: blue;
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+}

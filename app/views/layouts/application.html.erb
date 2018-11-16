@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>RailsMisterCocktail</title>
+    <title>RailsMisterCocktail195</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
   </head>
 
   <body>
+    <%= render "shared/navbar" %>
     <%= yield %>
-
-    <%= javascript_include_tag "application" %> <!-- from app/assets/javascripts/application.js -->
-  <%= javascript_pack_tag "application" %>    <!-- from app/javascript/packs/application.js -->
+    <footer class="footer"> </footer>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application' %>
   </body>
 </html>
